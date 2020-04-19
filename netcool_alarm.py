@@ -13,7 +13,7 @@ def index():
 
 @app.route('/uploads', methods=['POST'])
 def upload():
-    UPLOAD_FOLDER  = os.getcwd()+'\output'
+    UPLOAD_FOLDER  = os.getcwd()+'/'+'output'
 
     app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
